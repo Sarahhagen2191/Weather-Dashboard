@@ -116,34 +116,5 @@ header{
 
 }
 
-.weather-boxes{
-    padding-right: 30px;
-    height: 180px;
-
-}
-
-.btn{
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    background-color: lightgray;
-}
-
-.btn:hover{
-    background-color: rgb(182, 181, 181);
-    cursor: pointer;
-}
-
-.weather-section{
-    display: flex;
-    flex-direction: column;
-}
-
-.fiveDays-weather{
- display: flex;
- justify-content: space-between;
- align-items: flex-start;
-
-}
 
 
