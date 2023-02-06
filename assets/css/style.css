@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hide{
@@ -14,7 +15,7 @@ header{
     background-color: tomato;
     color: white;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .container{
@@ -22,51 +23,58 @@ header{
     grid-template-columns: 25% 75%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "search-city-section weather-section";
+    "search-city-section weather-section"
+    ;
 }
 
-.today-header-section{
+.weather-section{
+    margin-right: 15px;
+}
+
+.weather-header-section{
     display: flex;
     text-align: center;
 }
 
-
-.weather-section{
-    width: 100%;
+.weather-header-section img{
+    margin-top: 3px;
+    margin-left: 6px;
 }
 
-.today-weather{
+.daily-weather{
     border: 1px solid black;
     margin: 10px 0px;
     padding: 5px 10px;
 }
 
-.today-weather {
+.daily-weather h2{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.today-weather p{
+.daily-weather p{
     margin: 15px 0px;
 }
 
-#daily-weather-last-item{
+#daily-weather last-item{
     padding-bottom: 10px;
 }
 
-.weather-boxes{
+.forecast-boxes{
     border: 1px solid black;
-    background-color: tomato;
+    background-color: tomato;(2, 149, 199);
     color: white;
     margin-top: 10px;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    height: 200px;
+    width: 160px;
 }
 
-.weather-boxes p{
+.forecast-boxes p{
     padding-top: 10px;
 }
 
-.weather-boxes img{
+.forecast-boxes img{
     margin-top: 10px;
 }
 
@@ -88,8 +96,20 @@ header{
 }
 
 .search-section .btn{
-    background-color: tomato;
+    background-color: tomato;(3, 168, 223);
     color: white;
+}
+
+.search-section .btn:hover{
+    background-color:tomato;(2, 149, 199);
+    cursor: pointer;
+}
+
+.search-section input{
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .btn{
@@ -97,6 +117,7 @@ header{
     border-radius: 5px;
     border: none;
     background-color: lightgray;
+    width: 100%;
 }
 
 .btn:hover{
@@ -111,10 +132,23 @@ header{
 
 .fiveDays-weather{
  display: flex;
+ flex-direction: row;
  justify-content: space-between;
- align-items: flex-start;
 
 }
 
+@media (max-width: 1140px) {
+    .fiveDays-weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
 
-
+@media (max-width: 720px) {
+    .fiveDays-weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
