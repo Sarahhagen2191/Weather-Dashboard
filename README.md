@@ -16,6 +16,8 @@ Link to the live version - https://sarahhagen2191.github.io/Weather-Dashboard/
 
 # Screenshot 
 
+![This is an image](assets/images/Screenshot%202023-02-07%20at%2012.42.33.png);
+
 # Installation 
 To install just click gh repo clone - https://github.com/Sarahhagen2191/Weather-Dashboard.git
 
