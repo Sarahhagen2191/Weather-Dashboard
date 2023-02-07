@@ -5,7 +5,7 @@ This is a website that's I've created with JQuery, HTML and CSS and also the ope
 
 The main goal is to allow the user to search for a city to get its weather for today and the next five days.
 
-Link to the live version - 
+Link to the live version - https://sarahhagen2191.github.io/Weather-Dashboard/ 
 
 # Table of Contents:
 - Screenshots
